@@ -1,0 +1,16 @@
+<h1> productos desde plantilla "productos"</h1>
+
+<% if(productos.length) { %> 
+    <ul>
+
+        <% productos.forEach(pr => { %> 
+            <li> 
+                Nombre: <%= pr.nombre %> <br>
+                Precio: <%= pr.precio %> <br>
+                URL: <%= pr.url %> <br>
+            </li>
+            <% }) %> 
+    </ul>
+    <% } else { %> 
+<p style="color:red;"> No se encontraron datos </p>
+        <% } %> 
